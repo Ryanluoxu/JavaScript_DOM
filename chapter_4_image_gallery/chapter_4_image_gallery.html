@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <hi>Snapshots</hi>
+    <ul>
+        <li>
+            <a href="images/sea.jpg" title="sea" onclick="showPicture(this); return false;">Sea</a>
+        </li>
+        <li>
+            <a href="images/guitar.png" title="guitar man" onclick="showPicture(this); return false;">Guitar Man</a>
+        </li>
+        <li>
+            <a href="images/child.JPG" title="child" onclick="showPicture(this); return false;">Child</a>
+        </li>
+        <li>
+            <a href="images/singer.JPG" title="singer" onclick="showPicture(this); return false;">Singer</a>
+        </li>
+    </ul>
+
+    <img id="placeHolder" src="images/image_blank.png" alt="placeHolder">
+    <p id="description">Image description</p>
+
+    <script type="text/javascript" src="chapter_4_image_gallery.js"></script>
+    
+</body>
+</html>
