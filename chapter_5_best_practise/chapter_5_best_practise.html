@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Best Practise</title>
+<!-- <link rel="stylesheet" href="layout.css"> -->
+</head>
+<body>
+    <h1>Best Practise</h1>
+
+    <!-- bad practise -->
+    <a href="#" onclick="popUp('https://www.youtube.com/'); return false">Youtube #</a>
+    <br>
+    <!-- good practise : 保证平稳退化 -->
+    <a href="https://www.youtube.com/" onclick="popUp('https://www.youtube.com/'); return false">Youtube href</a>
+    <br>
+    <!-- 进一步 -->
+    <a href="https://www.youtube.com/" onclick="popUp(this.href); return false">Youtube this.href</a>
+    <br>
+    <!-- 再进一步，分离出 JS 事件 -->
+    <a href="https://www.youtube.com/" class="popup">Youtube takeaway js</a>
+
+    <script type="text/javascript" src="chapter_5_best_practise.js"></script>
+    
+</body>
+</html>
